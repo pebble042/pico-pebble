@@ -173,10 +173,10 @@ D:/pico/pico-pebble/build/include/ICM20948/CMakeFiles/edit_cache.dir
 D:/pico/pico-pebble/build/include/arducam_mic/CMakeFiles/arducam_mic_mic_i2s_pio_h.dir
 D:/pico/pico-pebble/build/include/arducam_mic/CMakeFiles/edit_cache.dir
 D:/pico/pico-pebble/build/include/arducam_mic/CMakeFiles/rebuild_cache.dir
-D:/pico/pico-pebble/build/examples/counter/CMakeFiles/counter.dir
-D:/pico/pico-pebble/build/examples/counter/CMakeFiles/rebuild_cache.dir
-D:/pico/pico-pebble/build/examples/counter/CMakeFiles/ELF2UF2Build.dir
-D:/pico/pico-pebble/build/examples/counter/CMakeFiles/edit_cache.dir
-D:/pico/pico-pebble/build/examples/blink/CMakeFiles/blink.dir
-D:/pico/pico-pebble/build/examples/blink/CMakeFiles/edit_cache.dir
-D:/pico/pico-pebble/build/examples/blink/CMakeFiles/rebuild_cache.dir
+D:/pico/pico-pebble/build/projects/counter/CMakeFiles/counter.dir
+D:/pico/pico-pebble/build/projects/counter/CMakeFiles/rebuild_cache.dir
+D:/pico/pico-pebble/build/projects/counter/CMakeFiles/ELF2UF2Build.dir
+D:/pico/pico-pebble/build/projects/counter/CMakeFiles/edit_cache.dir
+D:/pico/pico-pebble/build/projects/blink/CMakeFiles/blink.dir
+D:/pico/pico-pebble/build/projects/blink/CMakeFiles/edit_cache.dir
+D:/pico/pico-pebble/build/projects/blink/CMakeFiles/rebuild_cache.dir

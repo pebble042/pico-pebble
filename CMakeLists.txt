@@ -11,23 +11,6 @@ pico_sdk_init()
 
 add_library(pico-pebble "")
 
-target_compile_definitions(
-  pico-pebble
-  PUBLIC
-  COMPILE_DEFINITIONS TF_LITE_DISABLE_X86_NEON=1
-  COMPILE_DEFINITIONS TF_LITE_STATIC_MEMORY=1
-  COMPILE_DEFINITIONS CMSIS_NN=1
-)
-
-set_target_properties(
-  pico-pebble
-  PROPERTIES
-  COMPILE_FLAGS -fno-rtti
-  COMPILE_FLAGS -fno-exceptions
-  COMPILE_FLAGS -fno-threadsafe-statics
-  COMPILE_FLAGS -nostdlib
-)
-
 target_link_libraries(
   pico-pebble
   pico_stdlib
@@ -48,7 +31,7 @@ include_directories(include/pico-microphone)
 include_directories(include/ICM20948)
 include_directories(include/arducam_mic)
 
-add_subdirectory("examples/counter")
-add_subdirectory("examples/blink")
+add_subdirectory("projects/counter")
+add_subdirectory("projects/blink")
 
 

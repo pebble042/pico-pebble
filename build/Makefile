@@ -307,7 +307,7 @@ counter: cmake_check_build_system
 
 # fast build rule for target.
 counter/fast:
-	$(MAKE) $(MAKESILENT) -f examples\counter\CMakeFiles\counter.dir\build.make examples/counter/CMakeFiles/counter.dir/build
+	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\counter.dir\build.make projects/counter/CMakeFiles/counter.dir/build
 .PHONY : counter/fast
 
 #=============================================================================
@@ -320,7 +320,7 @@ ELF2UF2Build: cmake_check_build_system
 
 # fast build rule for target.
 ELF2UF2Build/fast:
-	$(MAKE) $(MAKESILENT) -f examples\counter\CMakeFiles\ELF2UF2Build.dir\build.make examples/counter/CMakeFiles/ELF2UF2Build.dir/build
+	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\ELF2UF2Build.dir\build.make projects/counter/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
 
 #=============================================================================
@@ -333,7 +333,7 @@ blink: cmake_check_build_system
 
 # fast build rule for target.
 blink/fast:
-	$(MAKE) $(MAKESILENT) -f examples\blink\CMakeFiles\blink.dir\build.make examples/blink/CMakeFiles/blink.dir/build
+	$(MAKE) $(MAKESILENT) -f projects\blink\CMakeFiles\blink.dir\build.make projects/blink/CMakeFiles/blink.dir/build
 .PHONY : blink/fast
 
 D_/pico/pico-sdk/src/common/pico_sync/critical_section.obj: D_/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj

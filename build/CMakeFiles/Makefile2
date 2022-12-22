@@ -79,8 +79,8 @@ all: include/ICM42622/all
 all: include/pico-microphone/all
 all: include/ICM20948/all
 all: include/arducam_mic/all
-all: examples/counter/all
-all: examples/blink/all
+all: projects/counter/all
+all: projects/blink/all
 
 .PHONY : all
 
@@ -92,8 +92,8 @@ preinstall: include/ICM42622/preinstall
 preinstall: include/pico-microphone/preinstall
 preinstall: include/ICM20948/preinstall
 preinstall: include/arducam_mic/preinstall
-preinstall: examples/counter/preinstall
-preinstall: examples/blink/preinstall
+preinstall: projects/counter/preinstall
+preinstall: projects/blink/preinstall
 
 .PHONY : preinstall
 
@@ -106,48 +106,10 @@ clean: include/ICM42622/clean
 clean: include/pico-microphone/clean
 clean: include/ICM20948/clean
 clean: include/arducam_mic/clean
-clean: examples/counter/clean
-clean: examples/blink/clean
+clean: projects/counter/clean
+clean: projects/blink/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory examples/blink
-
-# Recursive "all" directory target.
-examples/blink/all: examples/blink/CMakeFiles/blink.dir/all
-
-.PHONY : examples/blink/all
-
-# Recursive "preinstall" directory target.
-examples/blink/preinstall:
-
-.PHONY : examples/blink/preinstall
-
-# Recursive "clean" directory target.
-examples/blink/clean: examples/blink/CMakeFiles/blink.dir/clean
-
-.PHONY : examples/blink/clean
-
-#=============================================================================
-# Directory level rules for directory examples/counter
-
-# Recursive "all" directory target.
-examples/counter/all: examples/counter/CMakeFiles/counter.dir/all
-examples/counter/all: examples/counter/CMakeFiles/ELF2UF2Build.dir/all
-
-.PHONY : examples/counter/all
-
-# Recursive "preinstall" directory target.
-examples/counter/preinstall:
-
-.PHONY : examples/counter/preinstall
-
-# Recursive "clean" directory target.
-examples/counter/clean: examples/counter/CMakeFiles/counter.dir/clean
-examples/counter/clean: examples/counter/CMakeFiles/ELF2UF2Build.dir/clean
-
-.PHONY : examples/counter/clean
 
 #=============================================================================
 # Directory level rules for directory include/ICM20948
@@ -1793,6 +1755,44 @@ pico-sdk/tools/clean:
 .PHONY : pico-sdk/tools/clean
 
 #=============================================================================
+# Directory level rules for directory projects/blink
+
+# Recursive "all" directory target.
+projects/blink/all: projects/blink/CMakeFiles/blink.dir/all
+
+.PHONY : projects/blink/all
+
+# Recursive "preinstall" directory target.
+projects/blink/preinstall:
+
+.PHONY : projects/blink/preinstall
+
+# Recursive "clean" directory target.
+projects/blink/clean: projects/blink/CMakeFiles/blink.dir/clean
+
+.PHONY : projects/blink/clean
+
+#=============================================================================
+# Directory level rules for directory projects/counter
+
+# Recursive "all" directory target.
+projects/counter/all: projects/counter/CMakeFiles/counter.dir/all
+projects/counter/all: projects/counter/CMakeFiles/ELF2UF2Build.dir/all
+
+.PHONY : projects/counter/all
+
+# Recursive "preinstall" directory target.
+projects/counter/preinstall:
+
+.PHONY : projects/counter/preinstall
+
+# Recursive "clean" directory target.
+projects/counter/clean: projects/counter/CMakeFiles/counter.dir/clean
+projects/counter/clean: projects/counter/CMakeFiles/ELF2UF2Build.dir/clean
+
+.PHONY : projects/counter/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/pico-pebble.dir
 
 # All Build rule for target.
@@ -2144,90 +2144,90 @@ include/arducam_mic/CMakeFiles/arducam_mic_mic_i2s_pio_h.dir/clean:
 .PHONY : include/arducam_mic/CMakeFiles/arducam_mic_mic_i2s_pio_h.dir/clean
 
 #=============================================================================
-# Target rules for target examples/counter/CMakeFiles/counter.dir
+# Target rules for target projects/counter/CMakeFiles/counter.dir
 
 # All Build rule for target.
-examples/counter/CMakeFiles/counter.dir/all: CMakeFiles/pico-pebble.dir/all
-examples/counter/CMakeFiles/counter.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
-examples/counter/CMakeFiles/counter.dir/all: include/LCD_st7735/CMakeFiles/LCD_st7735.dir/all
-examples/counter/CMakeFiles/counter.dir/all: examples/counter/CMakeFiles/ELF2UF2Build.dir/all
-	$(MAKE) $(MAKESILENT) -f examples\counter\CMakeFiles\counter.dir\build.make examples/counter/CMakeFiles/counter.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples\counter\CMakeFiles\counter.dir\build.make examples/counter/CMakeFiles/counter.dir/build
+projects/counter/CMakeFiles/counter.dir/all: CMakeFiles/pico-pebble.dir/all
+projects/counter/CMakeFiles/counter.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
+projects/counter/CMakeFiles/counter.dir/all: include/LCD_st7735/CMakeFiles/LCD_st7735.dir/all
+projects/counter/CMakeFiles/counter.dir/all: projects/counter/CMakeFiles/ELF2UF2Build.dir/all
+	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\counter.dir\build.make projects/counter/CMakeFiles/counter.dir/depend
+	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\counter.dir\build.make projects/counter/CMakeFiles/counter.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\pico\pico-pebble\build\CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86 "Built target counter"
-.PHONY : examples/counter/CMakeFiles/counter.dir/all
+.PHONY : projects/counter/CMakeFiles/counter.dir/all
 
 # Build rule for subdir invocation for target.
-examples/counter/CMakeFiles/counter.dir/rule: cmake_check_build_system
+projects/counter/CMakeFiles/counter.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-pebble\build\CMakeFiles 49
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/counter/CMakeFiles/counter.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 projects/counter/CMakeFiles/counter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-pebble\build\CMakeFiles 0
-.PHONY : examples/counter/CMakeFiles/counter.dir/rule
+.PHONY : projects/counter/CMakeFiles/counter.dir/rule
 
 # Convenience name for target.
-counter: examples/counter/CMakeFiles/counter.dir/rule
+counter: projects/counter/CMakeFiles/counter.dir/rule
 
 .PHONY : counter
 
 # clean rule for target.
-examples/counter/CMakeFiles/counter.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples\counter\CMakeFiles\counter.dir\build.make examples/counter/CMakeFiles/counter.dir/clean
-.PHONY : examples/counter/CMakeFiles/counter.dir/clean
+projects/counter/CMakeFiles/counter.dir/clean:
+	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\counter.dir\build.make projects/counter/CMakeFiles/counter.dir/clean
+.PHONY : projects/counter/CMakeFiles/counter.dir/clean
 
 #=============================================================================
-# Target rules for target examples/counter/CMakeFiles/ELF2UF2Build.dir
+# Target rules for target projects/counter/CMakeFiles/ELF2UF2Build.dir
 
 # All Build rule for target.
-examples/counter/CMakeFiles/ELF2UF2Build.dir/all:
-	$(MAKE) $(MAKESILENT) -f examples\counter\CMakeFiles\ELF2UF2Build.dir\build.make examples/counter/CMakeFiles/ELF2UF2Build.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples\counter\CMakeFiles\ELF2UF2Build.dir\build.make examples/counter/CMakeFiles/ELF2UF2Build.dir/build
+projects/counter/CMakeFiles/ELF2UF2Build.dir/all:
+	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\ELF2UF2Build.dir\build.make projects/counter/CMakeFiles/ELF2UF2Build.dir/depend
+	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\ELF2UF2Build.dir\build.make projects/counter/CMakeFiles/ELF2UF2Build.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\pico\pico-pebble\build\CMakeFiles --progress-num=1,2 "Built target ELF2UF2Build"
-.PHONY : examples/counter/CMakeFiles/ELF2UF2Build.dir/all
+.PHONY : projects/counter/CMakeFiles/ELF2UF2Build.dir/all
 
 # Build rule for subdir invocation for target.
-examples/counter/CMakeFiles/ELF2UF2Build.dir/rule: cmake_check_build_system
+projects/counter/CMakeFiles/ELF2UF2Build.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-pebble\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/counter/CMakeFiles/ELF2UF2Build.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 projects/counter/CMakeFiles/ELF2UF2Build.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-pebble\build\CMakeFiles 0
-.PHONY : examples/counter/CMakeFiles/ELF2UF2Build.dir/rule
+.PHONY : projects/counter/CMakeFiles/ELF2UF2Build.dir/rule
 
 # Convenience name for target.
-ELF2UF2Build: examples/counter/CMakeFiles/ELF2UF2Build.dir/rule
+ELF2UF2Build: projects/counter/CMakeFiles/ELF2UF2Build.dir/rule
 
 .PHONY : ELF2UF2Build
 
 # clean rule for target.
-examples/counter/CMakeFiles/ELF2UF2Build.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples\counter\CMakeFiles\ELF2UF2Build.dir\build.make examples/counter/CMakeFiles/ELF2UF2Build.dir/clean
-.PHONY : examples/counter/CMakeFiles/ELF2UF2Build.dir/clean
+projects/counter/CMakeFiles/ELF2UF2Build.dir/clean:
+	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\ELF2UF2Build.dir\build.make projects/counter/CMakeFiles/ELF2UF2Build.dir/clean
+.PHONY : projects/counter/CMakeFiles/ELF2UF2Build.dir/clean
 
 #=============================================================================
-# Target rules for target examples/blink/CMakeFiles/blink.dir
+# Target rules for target projects/blink/CMakeFiles/blink.dir
 
 # All Build rule for target.
-examples/blink/CMakeFiles/blink.dir/all: CMakeFiles/pico-pebble.dir/all
-examples/blink/CMakeFiles/blink.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
-examples/blink/CMakeFiles/blink.dir/all: examples/counter/CMakeFiles/ELF2UF2Build.dir/all
-	$(MAKE) $(MAKESILENT) -f examples\blink\CMakeFiles\blink.dir\build.make examples/blink/CMakeFiles/blink.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples\blink\CMakeFiles\blink.dir\build.make examples/blink/CMakeFiles/blink.dir/build
+projects/blink/CMakeFiles/blink.dir/all: CMakeFiles/pico-pebble.dir/all
+projects/blink/CMakeFiles/blink.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
+projects/blink/CMakeFiles/blink.dir/all: projects/counter/CMakeFiles/ELF2UF2Build.dir/all
+	$(MAKE) $(MAKESILENT) -f projects\blink\CMakeFiles\blink.dir\build.make projects/blink/CMakeFiles/blink.dir/depend
+	$(MAKE) $(MAKESILENT) -f projects\blink\CMakeFiles\blink.dir\build.make projects/blink/CMakeFiles/blink.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\pico\pico-pebble\build\CMakeFiles --progress-num=46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65 "Built target blink"
-.PHONY : examples/blink/CMakeFiles/blink.dir/all
+.PHONY : projects/blink/CMakeFiles/blink.dir/all
 
 # Build rule for subdir invocation for target.
-examples/blink/CMakeFiles/blink.dir/rule: cmake_check_build_system
+projects/blink/CMakeFiles/blink.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-pebble\build\CMakeFiles 35
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 examples/blink/CMakeFiles/blink.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 projects/blink/CMakeFiles/blink.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\pico\pico-pebble\build\CMakeFiles 0
-.PHONY : examples/blink/CMakeFiles/blink.dir/rule
+.PHONY : projects/blink/CMakeFiles/blink.dir/rule
 
 # Convenience name for target.
-blink: examples/blink/CMakeFiles/blink.dir/rule
+blink: projects/blink/CMakeFiles/blink.dir/rule
 
 .PHONY : blink
 
 # clean rule for target.
-examples/blink/CMakeFiles/blink.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples\blink\CMakeFiles\blink.dir\build.make examples/blink/CMakeFiles/blink.dir/clean
-.PHONY : examples/blink/CMakeFiles/blink.dir/clean
+projects/blink/CMakeFiles/blink.dir/clean:
+	$(MAKE) $(MAKESILENT) -f projects\blink\CMakeFiles\blink.dir\build.make projects/blink/CMakeFiles/blink.dir/clean
+.PHONY : projects/blink/CMakeFiles/blink.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

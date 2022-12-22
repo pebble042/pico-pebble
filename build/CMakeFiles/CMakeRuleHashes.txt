@@ -1,7 +1,5 @@
 # Hashes of file build rules.
-851ca751f200d84e82eb59508700506c examples/counter/CMakeFiles/ELF2UF2Build
 1709d1b88965a2e413d68affac63b2e6 examples/counter/CMakeFiles/ELF2UF2Build-complete
-aa0f1fe747fc31322d9b973c46a70742 examples/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 08967736f6e4c81ec8857452e0d62c33 examples/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 d05e6f9f9c6eca15dbb7eb76ee01e6d3 examples/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
 14b52706675d9fc9afd3720ab97d05ac examples/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
@@ -31,3 +29,12 @@ e55ae3ee25cf4f071a252b31db0e7055 pico-sdk/src/rp2_common/cyw43_driver/pioasm/src
 9b66993a90da431af70acb5a91adaef4 pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir
 209d8f37b02b9ea5ad5621f3f7e2adf5 pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch
 7d2f0cb2735137e153436ac4b3945101 pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update
+3f550ca4688ed51a44a12577fa6d590f projects/counter/CMakeFiles/ELF2UF2Build
+dd80811701136c3b6d429294ee7db4fd projects/counter/CMakeFiles/ELF2UF2Build-complete
+aa0f1fe747fc31322d9b973c46a70742 projects/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
+1d9ac39ddae9cf53a96b63ce0cb7f10f projects/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
+34ee83ca096f088c9c83a1c29b8ace08 projects/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
+26a18b3caa02138537bedd15c98a3c79 projects/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
+29c9caacc5321f2780a1405279bbe748 projects/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
+dd3f580d143f20f59540266ef25c0a52 projects/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
+afadd49c891215da498492bd00330317 projects/counter/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update

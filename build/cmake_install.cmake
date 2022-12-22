@@ -46,8 +46,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/pico/pico-pebble/build/include/pico-microphone/cmake_install.cmake")
   include("D:/pico/pico-pebble/build/include/ICM20948/cmake_install.cmake")
   include("D:/pico/pico-pebble/build/include/arducam_mic/cmake_install.cmake")
-  include("D:/pico/pico-pebble/build/examples/counter/cmake_install.cmake")
-  include("D:/pico/pico-pebble/build/examples/blink/cmake_install.cmake")
+  include("D:/pico/pico-pebble/build/projects/counter/cmake_install.cmake")
+  include("D:/pico/pico-pebble/build/projects/blink/cmake_install.cmake")
 
 endif()
 
