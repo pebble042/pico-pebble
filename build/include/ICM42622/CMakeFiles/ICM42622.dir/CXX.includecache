@@ -122,6 +122,10 @@ sys/cdefs.h
 pico/types.h
 D:/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/pico/types.h
 
+D:/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
+cstdlib
+-
+
 generated/pico_base/pico/config_autogen.h
 D:/pico/pico-sdk/src/boards/include/boards/pico.h
 -

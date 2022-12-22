@@ -1448,9 +1448,9 @@ Discarded input sections
                 0x00000000        0x2 ..\..\include\LCD_st7735\libLCD_st7735.a(DEV_Config.c.obj)
  .bss.slice_num
                 0x00000000        0x4 ..\..\include\LCD_st7735\libLCD_st7735.a(DEV_Config.c.obj)
- .text          0x00000000        0x0 C:\Users\ployy\AppData\Local\Temp\ccSfHNzZ.o
- .data          0x00000000        0x0 C:\Users\ployy\AppData\Local\Temp\ccSfHNzZ.o
- .bss           0x00000000        0x0 C:\Users\ployy\AppData\Local\Temp\ccSfHNzZ.o
+ .text          0x00000000        0x0 C:\Users\ployy\AppData\Local\Temp\ccgtWtsT.o
+ .data          0x00000000        0x0 C:\Users\ployy\AppData\Local\Temp\ccgtWtsT.o
+ .bss           0x00000000        0x0 C:\Users\ployy\AppData\Local\Temp\ccgtWtsT.o
  .data          0x00000000        0x0 d:/pico/armcc/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 d:/pico/armcc/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 d:/pico/armcc/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1673,7 +1673,7 @@ LOAD d:/pico/armcc/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../ar
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\ployy\AppData\Local\Temp\ccSfHNzZ.o
+ .boot2         0x10000000      0x100 C:\Users\ployy\AppData\Local\Temp\ccgtWtsT.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3275,7 +3275,7 @@ LOAD CMakeFiles/counter.dir/D_/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
 LOAD CMakeFiles/counter.dir/D_/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 LOAD ..\..\libpico-pebble.a
 LOAD ..\..\include\LCD_st7735\libLCD_st7735.a
-LOAD C:\Users\ployy\AppData\Local\Temp\ccSfHNzZ.o
+LOAD C:\Users\ployy\AppData\Local\Temp\ccgtWtsT.o
 LOAD d:/pico/armcc/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD d:/pico/armcc/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -3400,7 +3400,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000852       0x2c ..\..\include\LCD_st7735\libLCD_st7735.a(DEV_Config.c.obj)
  .ARM.attributes
-                0x0000087e       0x22 C:\Users\ployy\AppData\Local\Temp\ccSfHNzZ.o
+                0x0000087e       0x22 C:\Users\ployy\AppData\Local\Temp\ccgtWtsT.o
  .ARM.attributes
                 0x000008a0       0x1e d:/pico/armcc/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes

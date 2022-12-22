@@ -2147,9 +2147,9 @@ include/arducam_mic/CMakeFiles/arducam_mic_mic_i2s_pio_h.dir/clean:
 # Target rules for target projects/counter/CMakeFiles/counter.dir
 
 # All Build rule for target.
-projects/counter/CMakeFiles/counter.dir/all: CMakeFiles/pico-pebble.dir/all
 projects/counter/CMakeFiles/counter.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 projects/counter/CMakeFiles/counter.dir/all: include/LCD_st7735/CMakeFiles/LCD_st7735.dir/all
+projects/counter/CMakeFiles/counter.dir/all: CMakeFiles/pico-pebble.dir/all
 projects/counter/CMakeFiles/counter.dir/all: projects/counter/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\counter.dir\build.make projects/counter/CMakeFiles/counter.dir/depend
 	$(MAKE) $(MAKESILENT) -f projects\counter\CMakeFiles\counter.dir\build.make projects/counter/CMakeFiles/counter.dir/build
@@ -2204,8 +2204,8 @@ projects/counter/CMakeFiles/ELF2UF2Build.dir/clean:
 # Target rules for target projects/blink/CMakeFiles/blink.dir
 
 # All Build rule for target.
-projects/blink/CMakeFiles/blink.dir/all: CMakeFiles/pico-pebble.dir/all
 projects/blink/CMakeFiles/blink.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
+projects/blink/CMakeFiles/blink.dir/all: CMakeFiles/pico-pebble.dir/all
 projects/blink/CMakeFiles/blink.dir/all: projects/counter/CMakeFiles/ELF2UF2Build.dir/all
 	$(MAKE) $(MAKESILENT) -f projects\blink\CMakeFiles\blink.dir\build.make projects/blink/CMakeFiles/blink.dir/depend
 	$(MAKE) $(MAKESILENT) -f projects\blink\CMakeFiles\blink.dir\build.make projects/blink/CMakeFiles/blink.dir/build
