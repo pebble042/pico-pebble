@@ -16,11 +16,13 @@ limitations under the License.
 #ifndef IMU_HANDLER_FUNCTIONS_H_
 #define IMU_HANDLER_FUNCTIONS_H_
 
+#include "LCD_st7735.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-bool imuInit(void);
+bool IMU_Init(void);
 
 bool imuAccelRead(float *ps16X, float *ps16Y, float *ps16Z);
 

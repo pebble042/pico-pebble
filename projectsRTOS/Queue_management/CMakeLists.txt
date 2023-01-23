@@ -19,7 +19,8 @@ target_link_libraries(
         pico_stdlib 
         pico-pebble
         LCD_st7735
-        
+        ICM20948
+
         )
 
 # Enable usb output, disable uart output

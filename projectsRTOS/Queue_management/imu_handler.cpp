@@ -29,25 +29,25 @@ limitations under the License.
 
 IMU_EN_SENSOR_TYPE enMotionSensorType;
 
-bool imuInit(void) 
+bool IMU_Init(void) 
 {
-    stdio_init_all(); 
-    i2c_init(I2C_PORT, 400 * 1000);
-    gpio_set_function(4, GPIO_FUNC_I2C);
-    gpio_set_function(5, GPIO_FUNC_I2C);
-    gpio_pull_up(4);
-    gpio_pull_up(5);
-    sleep_ms(1000);
+  stdio_init_all(); 
+  i2c_init(I2C_PORT, 400 * 1000);
+  gpio_set_function(4, GPIO_FUNC_I2C);
+  gpio_set_function(5, GPIO_FUNC_I2C);
+  gpio_pull_up(4);
+  gpio_pull_up(5);
+  sleep_ms(1000);
 
-    ICM20948::imuInit(&enMotionSensorType);
+  ICM20948::imuInit(&enMotionSensorType);
 
-    if (IMU_EN_SENSOR_TYPE_ICM20948 != enMotionSensorType)
-    {
-      printf("Failed to initialize IMU!");
-      return false;
-    }
+  if (IMU_EN_SENSOR_TYPE_ICM20948 != enMotionSensorType)
+  {
+    printf("Failed to initialize IMU!");
+    return false;
+  }
       
-    return true;
+  return true;
 
 }
 
@@ -55,7 +55,8 @@ bool imuInit(void)
 /*                                Accelerometer                               */
 /* -------------------------------------------------------------------------- */
 
-bool imuAccelRead(float *ps16X, float *ps16Y, float *ps16Z) {
+bool imuAccelRead(float *ps16X, float *ps16Y, float *ps16Z) 
+{
   uint8_t                     u8Buf[2];
   int16_t                     s16Buf[3] = { 0 };
   uint8_t                     i;
@@ -89,7 +90,8 @@ bool imuAccelRead(float *ps16X, float *ps16Y, float *ps16Z) {
 /*                                  Gyroscope                                 */
 /* -------------------------------------------------------------------------- */
 
-bool imuGyroRead(float *ps16X, float *ps16Y, float *ps16Z) {
+bool imuGyroRead(float *ps16X, float *ps16Y, float *ps16Z) 
+{
   uint8_t u8Buf[6];
   int16_t s16Buf[3] = { 0 };
   uint8_t i;
@@ -125,7 +127,8 @@ bool imuGyroRead(float *ps16X, float *ps16Y, float *ps16Z) {
 /*                                Magnetometer                                */
 /* -------------------------------------------------------------------------- */
 
-bool imuMagRead(float *ps16X, float *ps16Y, float *ps16Z) {
+bool imuMagRead(float *ps16X, float *ps16Y, float *ps16Z) 
+{
   
   uint8_t counter = 20;
   uint8_t u8Data[MAG_DATA_LEN];

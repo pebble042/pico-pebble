@@ -49,10 +49,13 @@ include_directories(include/pico-microphone)
 include_directories(include/ICM20948)
 include_directories(include/arducam_mic)
 
+# My PROJECT.
 add_subdirectory("projects/counter")
 add_subdirectory("projects/blink")
 add_subdirectory("projects/show_IMU")
-add_subdirectory("projects/Queue_management")
+
+# My RTOS PROJECT.
+add_subdirectory("projectsRTOS/Queue_management")
 
 
 
