@@ -16,7 +16,11 @@ limitations under the License.
 #ifndef IMU_HANDLER_FUNCTIONS_H_
 #define IMU_HANDLER_FUNCTIONS_H_
 
-bool imuInit(void)
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+bool imuInit(void);
 
 bool imuAccelRead(float *ps16X, float *ps16Y, float *ps16Z);
 

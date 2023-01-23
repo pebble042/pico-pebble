@@ -27,7 +27,7 @@ limitations under the License.
 void setup(void) 
 {
     #if SCREEN
-    if(!SetupAccelerometer())
+    if(!imuInit())
     {
         printf("Failed to initialize IMU!");
     }
@@ -45,7 +45,7 @@ void loop()
   {
     /* ------------------------------ Test IMU lib ------------------------------ */
     /* Accelerometer */
-    /*
+    
     if(imuAccelRead(&x, &y,&z))
     {
       const float norm_x = y;
@@ -58,7 +58,7 @@ void loop()
       printf("\n");
       sleep_ms(100);
     }
-    */
+    
 
     /* gyroscope */
     /*
