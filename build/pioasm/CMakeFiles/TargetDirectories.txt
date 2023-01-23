@@ -1,3 +1,0 @@
-D:/pico/pico-pebble/build/pioasm/CMakeFiles/pioasm.dir
-D:/pico/pico-pebble/build/pioasm/CMakeFiles/edit_cache.dir
-D:/pico/pico-pebble/build/pioasm/CMakeFiles/rebuild_cache.dir
