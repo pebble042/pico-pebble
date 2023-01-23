@@ -16,22 +16,23 @@ target_link_libraries(
   pico_stdlib
 )
 
-add_subdirectory(include/arducam_hm01b0)
+# add_subdirectory(include/arducam_hm01b0)
 add_subdirectory(include/LCD_st7735)
 add_subdirectory(include/ICM42622)
-add_subdirectory(include/pico-microphone)
+# add_subdirectory(include/pico-microphone)
 add_subdirectory(include/ICM20948)
-add_subdirectory(include/arducam_mic)
+# add_subdirectory(include/arducam_mic)
 
 
-include_directories(include/arducam_hm01b0)
+# include_directories(include/arducam_hm01b0)
 include_directories(include/LCD_st7735)
 include_directories(include/ICM42622)
-include_directories(include/pico-microphone)
+# include_directories(include/pico-microphone)
 include_directories(include/ICM20948)
-include_directories(include/arducam_mic)
+# include_directories(include/arducam_mic)
 
 add_subdirectory("projects/counter")
 add_subdirectory("projects/blink")
+add_subdirectory("projects/show_IMU")
 
 
